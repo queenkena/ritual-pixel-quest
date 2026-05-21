@@ -15,4 +15,14 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
+  ssr: {
+    noExternal: [
+      "h3-v2",
+      "rou3",
+      "srvx",
+      "@tanstack/router-core",
+      "@tanstack/react-router",
+      "@tanstack/history",
+    ],
+  },
 });
